@@ -1,7 +1,6 @@
 
 
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
-document.querySelector('.header__number').textContent = secretNumber;
 
 let score = 20;
 let highscore = 0;
@@ -29,15 +28,16 @@ document.querySelector('.main__check').addEventListener('click', function () {
         displayMessage('Correct Number');
         document.querySelector('body').style.backgroundColor = '#00b400';
         document.querySelector('.header__number').style.width = '20rem';
+
         if (score > highscore) {
             highscore = score;
-            document.querySelector('.highscore').textContent = highscore + 1;
+            document.querySelector('.highscore').textContent = highscore;
         }
         return;
     }
 
     if (score === 0) {
-        displayMessage('Loh');
+        displayMessage('You lost the game!');
         return;
     }
 })
