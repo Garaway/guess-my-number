@@ -54,5 +54,6 @@ const funct = () => {
 
     document.querySelector('.header__number').textContent = secretNumber;
 };
+
 document.querySelector('.header__again').addEventListener('click', funct)
 
