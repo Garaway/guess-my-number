@@ -38,14 +38,14 @@ body {
   margin-top: 100px;
 }
 .header__number {
-  font-size: 5rem;
+  font-size: 4rem;
   text-align: center;
-  padding: 10px 0;
+  padding: 3rem 0;
   background: #eeeeee;
   color: #222222;
   width: 10rem;
   position: absolute;
-  top: 72%;
+  top: 58%;
   left: 50%;
   transform: translate(-50%, 50%);
 }
@@ -53,9 +53,10 @@ body {
 .main {
   width: 100%;
   max-width: 1300px;
-  justify-content: space-between;
+  justify-content: space-around;
   display: flex;
   margin: 160px auto;
+  align-items: center;
 }
 .main__guess {
   background: #222222;
@@ -63,7 +64,8 @@ body {
   width: 220px;
   height: 70px;
   position: absolute;
-  margin-left: 144px;
+  top: 54%;
+  left: 24%;
   color: #eeeeee;
   padding: 10px;
   font-size: 30px;
@@ -77,10 +79,14 @@ body {
 }
 .main__right {
   font-size: 20px;
+  position: relative;
 }
 .main__message {
   font-size: 25px;
   margin-bottom: 50px;
+}
+.main__score {
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
